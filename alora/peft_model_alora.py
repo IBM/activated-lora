@@ -1750,7 +1750,8 @@ class aLoRAPeftModelForCausalLM(PeftModel):
             
              
                 
-                input_ids = args[0]
+                input_ids = kwargs.get("input_ids") if not args else args[0]
+
                 if len(input_ids.shape) == 1:
                     input_ids = [args[0]]
                 if self.disable_adapters == True:
