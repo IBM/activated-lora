@@ -8,7 +8,7 @@ setup(
     author_email='kristjan.h.greenewald@ibm.com',
     packages=find_packages(),
     install_requires=[
-        "click",  "peft>=0.13.2","transformers" # Add any required dependencies here
+        "click",  "peft>=0.14","transformers" # Add any required dependencies here
     ],
     python_requires='>=3.8',
 )
