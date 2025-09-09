@@ -1,4 +1,6 @@
-# Activated LoRA (aLoRA)
+# DEPRECATED - PLEASE USE THE Activated LoRA (aLoRA) IMPLEMENTATION IN HUGGINGFACE PEFT
+
+PLEASE USE NEWER PEFT IMPLEMENTATION, see https://github.com/huggingface/peft/blob/main/docs/source/developer_guides/lora.md#activated-lora-alora
 
 Activated LoRA (aLoRA) is a new low rank adapter architecture that allows for reusing existing base model KV cache for more efficient inference, unlike standard LoRA models. As a result, aLoRA models can be quickly invoked as-needed for specialized tasks during (long) flows where the base model is primarily used, avoiding potentially expensive prefill costs in terms of latency, throughput, and GPU memory. See the whitepaper for a detailed discussion of these advantages and how they scale with context length, number of aLoRAs used, etc. 
 
